@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JHP-LU-xrX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Acceptera jobb-->
+        <scene sceneID="UbK-Ci-U1U">
+            <objects>
+                <viewController id="JHP-LU-xrX" customClass="JobAcceptViewController" customModule="InstallationsPartner_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iXA-pb-EXb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMo-lR-n52">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kfO-mK-yPF" userLabel="TopBarDate">
+                                <rect key="frame" x="15" y="49" width="384" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C7-3F-s4A" userLabel="filterButton">
+                                        <rect key="frame" x="0.0" y="5" width="30" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="V17-Wb-rft"/>
+                                            <constraint firstAttribute="height" constant="30" id="c29-1y-9Mj"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="gearshape.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="large" weight="bold"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="W9P-Ys-ikh" kind="presentation" id="SK3-Pq-1ID"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-cP-mdj" userLabel="rightDate">
+                                        <rect key="frame" x="30" y="3" width="324" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <state key="normal" title="Acceptera Jobb">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYE-xm-e8a" userLabel="userButton">
+                                        <rect key="frame" x="354" y="5" width="30" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="3bt-Xs-8P2"/>
+                                            <constraint firstAttribute="height" constant="30" id="aA9-IO-B8H"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="large" weight="bold"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xcf-B5-nSy"/>
+                        <color key="backgroundColor" red="0.15286305550000001" green="0.30591198800000002" blue="0.58815985920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aMo-lR-n52" firstAttribute="top" secondItem="kfO-mK-yPF" secondAttribute="bottom" constant="5" id="2eo-7y-jZB"/>
+                            <constraint firstItem="aMo-lR-n52" firstAttribute="top" secondItem="xcf-B5-nSy" secondAttribute="top" constant="50" id="4QD-et-aRE"/>
+                            <constraint firstItem="kfO-mK-yPF" firstAttribute="centerX" secondItem="iXA-pb-EXb" secondAttribute="centerX" id="7cd-6E-uQb"/>
+                            <constraint firstItem="kfO-mK-yPF" firstAttribute="leading" secondItem="xcf-B5-nSy" secondAttribute="leading" constant="15" id="ChI-Er-zUd"/>
+                            <constraint firstItem="xcf-B5-nSy" firstAttribute="trailing" secondItem="aMo-lR-n52" secondAttribute="trailing" id="EQ8-Jd-LO3"/>
+                            <constraint firstItem="xcf-B5-nSy" firstAttribute="trailing" secondItem="kfO-mK-yPF" secondAttribute="trailing" constant="15" id="T0r-Ig-E8e"/>
+                            <constraint firstItem="xcf-B5-nSy" firstAttribute="bottom" secondItem="aMo-lR-n52" secondAttribute="bottom" id="d3Z-1W-w7b"/>
+                            <constraint firstItem="kfO-mK-yPF" firstAttribute="top" secondItem="xcf-B5-nSy" secondAttribute="top" constant="5" id="vrM-zv-Dcn"/>
+                            <constraint firstItem="aMo-lR-n52" firstAttribute="leading" secondItem="xcf-B5-nSy" secondAttribute="leading" id="zDi-Bb-wKf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Acceptera jobb" image="checkmark.circle.fill" catalog="system" id="vY6-yZ-mJV"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="aMo-lR-n52" id="f0s-tb-rHu"/>
+                        <outlet property="tabbarItem" destination="vY6-yZ-mJV" id="EcB-NN-Axd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LGa-fS-yF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="181"/>
+        </scene>
+        <!--SettingView-->
+        <scene sceneID="jmX-2A-fID">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingView" id="W9P-Ys-ikh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcO-7p-fxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="-349"/>
+        </scene>
+        <!--Job Accept Panel View Controller-->
+        <scene sceneID="8Yg-WL-dyC">
+            <objects>
+                <viewController storyboardIdentifier="JobAcceptPanel" id="ISz-8v-Phm" customClass="JobAcceptPanelViewController" customModule="InstallationsPartner_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKd-CV-HKG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nut-dG-X0O">
+                                <rect key="frame" x="0.0" y="99" width="414" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4e-id-k9C" userLabel="refreshButton">
+                                <rect key="frame" x="20" y="59" width="24.5" height="28"/>
+                                <color key="tintColor" red="0.15286305550000001" green="0.30591198800000002" blue="0.58815985920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.clockwise" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="ISz-8v-Phm" eventType="touchUpInside" id="h0o-aq-7W9"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="egd-bV-fgO" userLabel="Button Stack">
+                                <rect key="frame" x="258" y="59" width="136" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rq-tj-1IX" userLabel="notAcceptedButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="19" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="GzE-Lc-o32"/>
+                                            <constraint firstAttribute="height" constant="25" id="rol-kD-j8b"/>
+                                        </constraints>
+                                        <state key="normal" image="bla"/>
+                                        <connections>
+                                            <action selector="notAcceptedButtonPressed:" destination="ISz-8v-Phm" eventType="touchUpInside" id="Yyy-nr-Dr7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07P-9l-BpR" userLabel="acceptedButton">
+                                        <rect key="frame" x="39" y="0.0" width="19" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="OFP-4P-J82"/>
+                                            <constraint firstAttribute="height" constant="25" id="YZv-OJ-aKC"/>
+                                        </constraints>
+                                        <state key="normal" image="orange-not"/>
+                                        <connections>
+                                            <action selector="acceptedButtonPressed:" destination="ISz-8v-Phm" eventType="touchUpInside" id="s9g-yQ-SsK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJF-m5-pvH" userLabel="sentToCustomerButton">
+                                        <rect key="frame" x="78" y="0.0" width="19" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="FAK-a5-PWN"/>
+                                            <constraint firstAttribute="height" constant="25" id="qJw-oU-Nx2"/>
+                                        </constraints>
+                                        <state key="normal" image="gul-not"/>
+                                        <connections>
+                                            <action selector="sentToCustomerButtonPressed:" destination="ISz-8v-Phm" eventType="touchUpInside" id="XJd-dV-ofM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-sd-9Mn" userLabel="bookedButton">
+                                        <rect key="frame" x="117" y="0.0" width="19" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="8Eb-xM-EiY"/>
+                                            <constraint firstAttribute="width" constant="19" id="uXf-ru-W5C"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <imageReference key="image" image="gron-not" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bookedButtonPressed:" destination="ISz-8v-Phm" eventType="touchUpInside" id="NWG-cn-l3k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkJ-ra-ngT" userLabel="saperator">
+                                <rect key="frame" x="0.0" y="98" width="414" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="laQ-0Q-V9y"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="BiS-sN-int">
+                                <rect key="frame" x="197" y="64" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G3i-To-IAp"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BiS-sN-int" firstAttribute="centerX" secondItem="SKd-CV-HKG" secondAttribute="centerX" id="5nL-u6-hwm"/>
+                            <constraint firstItem="G3i-To-IAp" firstAttribute="trailing" secondItem="NkJ-ra-ngT" secondAttribute="trailing" id="89E-xW-N5l"/>
+                            <constraint firstItem="G3i-To-IAp" firstAttribute="bottom" secondItem="Nut-dG-X0O" secondAttribute="bottom" id="GmZ-NX-yub"/>
+                            <constraint firstItem="BiS-sN-int" firstAttribute="top" secondItem="G3i-To-IAp" secondAttribute="top" constant="20" id="Ix3-PL-mLO"/>
+                            <constraint firstItem="B4e-id-k9C" firstAttribute="leading" secondItem="G3i-To-IAp" secondAttribute="leading" constant="20" id="J34-It-ufH"/>
+                            <constraint firstItem="Nut-dG-X0O" firstAttribute="top" secondItem="G3i-To-IAp" secondAttribute="top" constant="55" id="KSM-hP-CFZ"/>
+                            <constraint firstItem="egd-bV-fgO" firstAttribute="top" secondItem="G3i-To-IAp" secondAttribute="top" constant="15" id="Rw3-cD-Xhc"/>
+                            <constraint firstItem="G3i-To-IAp" firstAttribute="trailing" secondItem="Nut-dG-X0O" secondAttribute="trailing" id="ZVK-jM-zKh"/>
+                            <constraint firstItem="G3i-To-IAp" firstAttribute="trailing" secondItem="egd-bV-fgO" secondAttribute="trailing" constant="20" id="b2s-Bs-1wQ"/>
+                            <constraint firstItem="B4e-id-k9C" firstAttribute="top" secondItem="G3i-To-IAp" secondAttribute="top" constant="15" id="jxG-kA-8zH"/>
+                            <constraint firstItem="Nut-dG-X0O" firstAttribute="leading" secondItem="G3i-To-IAp" secondAttribute="leading" id="jzm-MQ-fjc"/>
+                            <constraint firstItem="NkJ-ra-ngT" firstAttribute="leading" secondItem="G3i-To-IAp" secondAttribute="leading" id="rZe-Uv-n3h"/>
+                            <constraint firstItem="Nut-dG-X0O" firstAttribute="top" secondItem="NkJ-ra-ngT" secondAttribute="bottom" id="ujP-tM-kR2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="acceptedButton" destination="07P-9l-BpR" id="UJn-eg-4X6"/>
+                        <outlet property="bookedButton" destination="ffa-sd-9Mn" id="wTC-r2-baw"/>
+                        <outlet property="notAcceptedButton" destination="4rq-tj-1IX" id="1Vp-QL-bOA"/>
+                        <outlet property="panelTableView" destination="Nut-dG-X0O" id="ge1-lr-Hqn"/>
+                        <outlet property="refreshButton" destination="B4e-id-k9C" id="TnF-Mq-h83"/>
+                        <outlet property="sentToCustomerButton" destination="wJF-m5-pvH" id="cTC-mw-xvY"/>
+                        <outlet property="spinner" destination="BiS-sN-int" id="Ki2-iY-yz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhb-Fh-yrh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="181"/>
+        </scene>
+        <!--SettingView-->
+        <scene sceneID="rrw-Mk-fH6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingView" id="myL-3q-7nL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vo8-g9-Y7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="619"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="bla" width="19" height="25"/>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="gron-not" width="57" height="75"/>
+        <image name="gul-not" width="57" height="75"/>
+        <image name="orange-not" width="57" height="75"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
