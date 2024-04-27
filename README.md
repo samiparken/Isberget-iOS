@@ -1,10 +1,8 @@
 # InstallationsPartner-iOS
+Task Management iOS App for installers
+developed for Svensk Installationspartner
 
-Mirrored and new designed project from React Native(https://github.com/FrontEdgeIT/InstallationsPartner) to Swift
+- Mirrored and new designed project from React Native(https://github.com/FrontEdgeIT/InstallationsPartner) to Swift
+- [Installationspartner in App Store](https://apps.apple.com/se/app/installationspartner/id1400502758)
 
-Added new features.
-- View for Tasks
-- View for Customer Answers
-- View for Customer Page Chat
-
-[Installationspartner in App Store](https://apps.apple.com/se/app/installationspartner/id1400502758)
+![app store image](/README/app_store_image.JPG)
