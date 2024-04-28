@@ -40,7 +40,7 @@ Task Management iOS App for installers. With this app, installers can...
 
 From this project, I gained a lot of confidence in iOS development. I've experienced all the paths from idea to the App Store.
 
-- Firebase Cloud Messaging (FCM) for Notifications
+- Firebase Cloud Messaging (FCM)
   - Sending notifications to the app while it's in the background state. 
 
 - Networking, RESTful APIs, and JSON parsing
